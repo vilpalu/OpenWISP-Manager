@@ -39,7 +39,7 @@
     option 'mode' 'ap'
     option 'ssid' '<%= h vap.essid %>'
     option 'hidden' '<%= vap.visibility == 'broadcasted' ? 0 : 1 %>'
-    option 'isolate' '1'
+    option 'isolate' '0'
     option 'encryption' '<%= h vap.encryption %>'
 <% if vap.encryption != 'none' -%>
     option 'key' '<%= h vap.key %>'
@@ -53,9 +53,9 @@
 <% end -%>
 <% end -%>
 <% end -%>
-    option 'bgscan' '0'
+   
     option 'wds' '0'
     option 'macpolicy' 'none'
-    option 'wmm' '0'
+    option 'wmm' '1'
 
 <% end -%>
