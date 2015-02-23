@@ -78,7 +78,8 @@ class AccessPoint < ActiveRecord::Base
     [
       ["Ubiquiti Networks", "ubiquiti"],
       ["AboCom", "abocom"],
-      ["PC Engines", "pc-engines"]
+      ["PC Engines", "pc-engines"],
+      ["Tp-Link", "tp-link"]
     ]
   end
 
@@ -91,6 +92,7 @@ class AccessPoint < ActiveRecord::Base
       ["Unifi", "unifi"],
       ["AboCom", "abocom"],
       ["Alix", "alix"],
+      ["WDR4300", "wdr4300"],
     ]
   end
 
