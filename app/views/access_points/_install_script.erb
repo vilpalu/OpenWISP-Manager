@@ -73,7 +73,9 @@ echo "Enabling wifi"
 <% access_point.radios.each do |r| -%>
 wifi up <%= r.name %>
 <% end -%>
-
+#disabling firewall 
+/etc/init.d/firewall disable
+/etc/init.d/firewall stop
 # VPNs
 echo "Applying l2 vpn(s) configuration"
 <% if access_point.l2vpn_clients.length > 0 -%>
